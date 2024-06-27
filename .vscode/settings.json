@@ -56,5 +56,5 @@
         "temp/": true,
         "Temp/": true
     },
-    "dotnet.defaultSolution": "Cyber-Invasion.sln"
+    "dotnet.defaultSolution": "CyberInvasion.sln"
 }
