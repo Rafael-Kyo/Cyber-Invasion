@@ -1,5 +1,4 @@
-using System.Collections;
-using System.Collections.Generic;
+
 using UnityEngine;
 
 public class Player2 : MonoBehaviour
@@ -21,7 +20,7 @@ public class Player2 : MonoBehaviour
 
     private void FixedUpdate() 
     {
-        //Andar
+        
         moveH = Input.GetAxis("Horizontal");
         
         transform.position += new Vector3(moveH * velocidade * Time.deltaTime, 0,0);
@@ -29,7 +28,7 @@ public class Player2 : MonoBehaviour
 
     void Update()
     {
-        //Animação Andar
+        
         if(Input.GetKey(KeyCode.D) && moveH > 0)
         {
             sprite.flipX = true;
@@ -47,7 +46,7 @@ public class Player2 : MonoBehaviour
         }
         
 
-        //Pular
+        
         if(Input.GetKeyDown(KeyCode.Space))
         {
             rb.AddForce(transform.up * forcaPulo,ForceMode2D.Impulse);

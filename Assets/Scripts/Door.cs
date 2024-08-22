@@ -3,13 +3,18 @@ using UnityEngine.SceneManagement;
 
 public class Door : MonoBehaviour
 {
-    public string sceneToLoad; // Nome da cena para carregar quando o jogador entra na porta
+    public string sceneToLoad; 
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.CompareTag("Rato")) // Verifica se o objeto que colidiu Ã© o jogador
+        if (other.CompareTag("Robo")) 
         {
-            SceneManager.LoadScene(sceneToLoad); // Carrega a cena especificada
+            SceneManager.LoadScene("Cenário"); 
+        }
+
+         if (other.CompareTag("Robo")) 
+        {
+            SceneManager.LoadScene("Cenário2"); 
         }
     }
 }
